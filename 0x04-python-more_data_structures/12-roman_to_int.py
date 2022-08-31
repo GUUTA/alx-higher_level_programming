@@ -37,9 +37,9 @@ def roman_to_int(roman_string):
             except IndexError:
                 pass
             idx += 1
-    # Search in dict for correct numbers and add
-    for k, v in r_dict.items():
-        for index in temp:
-            if index == k:
-                result += v
-    return result
+# Search in dict for correct numbers and add
+for k, v in r_dict.items():
+    for index in temp:
+        if index == k:
+            result += v
+            return result
