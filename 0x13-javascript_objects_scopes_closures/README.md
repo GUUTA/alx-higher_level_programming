@@ -1,0 +1,1 @@
+Javascript object scope cloures
