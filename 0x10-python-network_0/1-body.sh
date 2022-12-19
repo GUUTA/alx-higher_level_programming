@@ -1,3 +1,3 @@
 #!/bin/bash
-# Gets the body of a response from a URL if the status code is 200
-curl -s -L "$1"
+# script that takes in a URL, sends a GET request to the URL, and displays the body of the response
+curl -sL -X GET "$1"
