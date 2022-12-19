@@ -1,3 +1,3 @@
 #!/bin/bash
-# Takes in a URL, sends a request to that URL
-curl -sI "$1" | awk '$1 == "Content-Length:" {print $2}'
+# Gets the size of the body of a response from a URL
+curl -sI "$1" | grep -oiE 'Content-Length: [0-9]+' | cut -d ' ' -f2
